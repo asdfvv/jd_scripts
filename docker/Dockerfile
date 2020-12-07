@@ -9,6 +9,8 @@ RUN set -ex \
 
 RUN git clone https://github.com/lxk0301/jd_scripts /scripts \
         && cd /scripts \
+        && wget https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jingxi.js
+        && wget https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jd_timeMachine.js
         && mkdir logs \
         && npm install \
         && cd /tmp \
